@@ -1,0 +1,78 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.content .img{
+  width: 300px;
+  height: auto;
+}
+.content .img img{
+  width: 100%;
+  height: auto;
+}
+.ask{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+}
+.askContent{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ask .box{
+  width: 100%;
+  background-color: #fff;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+}
+.ask .box .pergunta{
+  width: 95%;
+}
+.ask .box .iconIr{
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #055ea8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.ask .box .pergunta .info{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.ask .box .pergunta .info span{
+  font-size: 0.6rem;
+}
+.referenciaImagem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

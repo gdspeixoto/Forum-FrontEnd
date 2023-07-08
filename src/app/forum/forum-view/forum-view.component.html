@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="content">
+    <div class="img"><img src="../assets/Questions-pana.png" alt=""></div>
+    <div class="ask">
+      <div class="askContent">
+        <div class="adicionar">
+        </div>
+        <div class="ask box">
+          <div class="pergunta">
+            <div class="info">
+              <h3>{{ list_perguntas?.titulo}}</h3>
+              <span>{{ list_perguntas?.nomePessoa}}</span>
+            </div>
+            <p>{{list_perguntas?.textoPergunta}}</p>
+            <div class="respostas">
+              <h3>RESPOSTAS</h3>
+              <div class="resposta" *ngFor="let resposta of list_perguntas?.respostas">
+                <h5>{{ resposta?.nome }}</h5>
+                <span>{{ resposta?.textoResposta }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inputCadastrar">
+        <form [formGroup]="respostaForm" (ngSubmit)="cadastrarResposta()">
+          <input type="text" placeholder="Seu nome" formControlName="nome">
+          <textarea placeholder="Digite sua resposta aqui" formControlName="texto"></textarea>
+          <input type="submit" value="enviar">
+        </form>
+        <div class="referenciaImagem"><a href="https://storyset.com/people">People illustrations by Storyset</a></div>
+
+      </div>
+    </div>
+  </div>
+</div>

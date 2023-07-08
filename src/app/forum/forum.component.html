@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="content">
+    <div class="img"><img src="../assets/Questions-pana.png" alt=""></div>
+    <div class="ask">
+      <div class="askContent">
+        <div class="adicionar">
+        </div>
+        <div class="ask box" *ngFor="let pergunta of list_perguntas">
+          <div class="pergunta">
+            <div class="info">
+              <h3>{{pergunta.titulo}}</h3>
+              <span>{{pergunta.nomePessoa}}</span>
+            </div>
+            <p>{{pergunta.textoPergunta}}</p>
+          </div>
+          <div class="iconIr"(click)="pageTo(pergunta.id)">></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="referenciaImagem"><a href="https://storyset.com/people">People illustrations by Storyset</a></div>
+</div>
+
